@@ -1,0 +1,29 @@
+{
+  "name": "htmlcssjs",
+  "version": "1.0.0",
+  "description": "Packages of my project",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "hello",
+    "user"
+  ],
+  "author": "Nabin",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.2",
+    "joi": "^14.3.1",
+    "mocha": "^6.1.4",
+    "mongoose": "^5.6.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
