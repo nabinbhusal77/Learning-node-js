@@ -11,7 +11,7 @@ const express = require('express'),
     mongoose.connection.once('open', () => {
         console.log('Connection Established to DB')
     }).on('error', () => {
-        console.log('Problem connection to DB.');
+        console.log('Problem connecting to DB.');
     })
 
     // Body-Parser
@@ -19,7 +19,8 @@ app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
 
     // Router Variables
 const indexRouter = require('./routes/index'),
-      authorsRouter = require('./routes/authors');
+      authorsRouter = require('./routes/authors')
+      booksRouter = require('./routes/books')
 
     // EJS
 app.set('view engine', 'ejs');
@@ -35,6 +36,7 @@ app.use(express.static('public'))
     // Routes Handling
 app.use('/', indexRouter);
 app.use('/authors', authorsRouter);
+app.use('/books', booksRouter)
 
     // Port and Server
 const port = process.env.PORT || 3000;

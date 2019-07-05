@@ -1,13 +1,13 @@
-<h2>Search Authors</h2>
+<h2>Search Books</h2>
 
-<form action="/authors" method="get">
-    <label>Name:</label><br>
+<form action="/books" method="get">
+    <label>Title:</label><br>
     <input type="text" name="name" value="<%= searchOptions.name %>">
     <button type="submit">Search</button>
 </form>
 
 <br>
 
-<% authors.forEach(author => { %>
+<%# <% authors.forEach(author => { %>
     <div><%= author.name%></div>
-<% }) %>
+<% }) %> %>
